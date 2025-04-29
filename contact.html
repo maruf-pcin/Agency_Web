@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Maruf Hasan</title>
+
+  <!-- Tailwind CSS CDN -->
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- ✅ Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-black text-white">
+  <!-- Navbar -->
+  <header class="fixed top-0 w-full flex justify-between items-center p-5 bg-black bg-opacity-30 backdrop-blur-lg z-40">
+    <div class="text-2xl font-bold text-cyan-400"><a href="index.html">Maruf Hasan</a></div>
+    <nav class="hidden md:flex gap-8">
+      <a href="index.html" class="hover:text-cyan-400 transition">Home</a>
+      <a href="about.html" class="hover:text-cyan-400 transition">About</a>
+      <a href="services.html" class="hover:text-cyan-400 transition">Services</a>
+      <a href="portfolio.html" class="hover:text-cyan-400 transition">Portfolio</a>
+      <a href="contact.html" class="hover:text-cyan-400 transition">Contact</a>
+    </nav>
+    <!-- Mobile Menu Button -->
+    <button id="mobile-menu-btn" class="md:hidden text-cyan-400">☰</button>
+  </header>
+
+  <!-- Mobile Menu -->
+  <nav id="mobile-menu" class="hidden fixed top-16 left-0 w-full bg-black bg-opacity-90 p-6 z-30 flex flex-col items-center gap-4 md:hidden">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- Page Content -->
+  <header class="p-6 text-center text-3xl font-bold text-cyan-400 mt-20">Contact</header>
+  <main class="px-6 py-10 max-w-xl mx-auto">
+    <form id="contact-form" class="glass p-6 flex flex-col gap-4">
+      <input type="text" name="name" placeholder="Your Name" class="p-3 rounded bg-black bg-opacity-30 text-white">
+      <input type="email" name="email" placeholder="Your Email" class="p-3 rounded bg-black bg-opacity-30 text-white">
+      <textarea name="message" rows="5" placeholder="Your Message" class="p-3 rounded bg-black bg-opacity-30 text-white"></textarea>
+      <button type="submit" class="bg-cyan-500 hover:bg-cyan-400 text-black font-bold py-2 px-4 rounded-full">Send</button>
+    </form>
+  </main>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
